@@ -5,16 +5,7 @@ Calcular  el triangulo de pascal con el numero de lineas que pida el usuario*/
 
 #include <stdio.h>
 
-int coeficiente(int n, int k) 
-{
-    if (k == 0 || k == n) 
-    {
-        return 1;
-    } else 
-    {
-        return coeficiente(n - 1, k - 1) + coeficiente(n - 1, k);
-    }
-}
+int coeficiente ();
 
 int main() 
 {
@@ -35,4 +26,15 @@ int main()
         printf("\n");
     }
     return 0;
+}
+
+int coeficiente(int n, int k) 
+{
+    if (k == 0 || k == n) 
+    {
+        return 1;
+    } else 
+    {
+        return coeficiente(n - 1, k - 1) + coeficiente(n - 1, k);
+    }
 }
