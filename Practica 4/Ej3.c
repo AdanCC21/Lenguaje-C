@@ -20,7 +20,7 @@ int main()
         }
         for (int k = 0; k <= n; k++) 
         {
-            int cof = coeficienteBinomial(n, k);
+            int cof = coeficiente(n, k);
             printf("%6d", cof);
         }
         printf("\n");
