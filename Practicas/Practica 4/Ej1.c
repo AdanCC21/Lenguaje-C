@@ -5,7 +5,6 @@ calcular ek fibonacci con una funcion sin recursion*/
 
 #include <stdio.h>
 #include <stdlib.h>
-
 int menu ();
 void fibo ();
 
