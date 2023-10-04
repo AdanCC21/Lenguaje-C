@@ -1,3 +1,7 @@
+/*Gonzalez Cese;a Adan 372799
+examen 1
+04-10-2023*/
+
 #include <stdio.h>
 #include "valid.h"
 
