@@ -5,22 +5,30 @@
 
 int main()
 {
-    int n,band,i,op;
+    //Declaracion de variables
+    int n,band=0,i,op;
     int acum=0;
     int vr[100];
     int j=0;
+    //etiqueta de inicio
     inicio:
+        //mientras bandera sea diferente de 0 repetira
         do
         {
             printf("Ingrese un numero\n");
             scanf("%d",&n);
-            if(n%2>0)
+            //Si n es mayor a 0 entonces es un numero positivo
+            if(n<=0)
             {
                 printf("intente de nuevo con un numero entero positivo\n");
+                band=0;
+            }
+            else
+            {
                 band=1;
             }
         }
-        while(band!=0);
+        while(band==0);
 
         for(i=n-1;i>0;i--)
         {
