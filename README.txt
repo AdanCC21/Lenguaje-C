@@ -2,5 +2,5 @@ Univesidad Autonoma De Baja California - UABC
 
 Facultad de ingenieria y arquitectura
 
-Programacion Estructurada
+Lenguaje C
 Gonzalez Cesena Adan
