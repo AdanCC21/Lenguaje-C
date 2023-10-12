@@ -12,6 +12,10 @@
 
 int main()
 {
-    
+    int *ptr;
+    int x;
+    x=2;
+    ptr = &x;
+    printf("X es igual a %d", ptr);
 
 }
