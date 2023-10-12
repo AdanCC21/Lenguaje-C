@@ -42,5 +42,6 @@ int multiplicarPorDos (int p)
 int arreglo(int ar[])
 {
     int c;
+    c=num_alea_sr (vect[], N, 1, 50); 
     
 }
