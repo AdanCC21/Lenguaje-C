@@ -7,30 +7,40 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include "libad.h"
 
 // Prototipos
 int multiplicarPorDos (int p);
 
 
-//  Main
+//   Main
 
 int main()
 {
+    srand(time(NULL));
     int *ptr;
-    int x, r;
+    int x, r, ar[7];
     x=2;
     ptr = &x;
     printf("X es igual a %d", ptr);
     system("Pause");
     r=multiplicarPorDos (ptr);
     printf("Su valor multiplicado es %d", r);
-
+    system("PAUSE");
+    
 }
 
-//Funciones
+//   Funciones
 int multiplicarPorDos (int p)
 {
     int b;
     b=p*2;
     return b;
-} 
+}
+
+int arreglo(int ar[])
+{
+    int c;
+    
+}
