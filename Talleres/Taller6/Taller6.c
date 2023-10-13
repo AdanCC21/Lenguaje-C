@@ -38,10 +38,3 @@ int multiplicarPorDos (int p)
     b=p*2;
     return b;
 }
-
-int arreglo(int ar[])
-{
-    int c;
-    c=num_alea_sr (vect[], N, 1, 50); 
-    
-}
