@@ -1,3 +1,7 @@
+/*
+Gonzalez Ceseña Adan 372799
+*/
+
 #include <stdio.h>
 //prototipos
 void registro ();
