@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+void terc (int array1[],int array2[], int array3[]);
+
 int main()
 {
     int array1[6],array2[6],array3[6];
@@ -13,11 +15,9 @@ int main()
     printf("Segundo arreglo\n");
     for(i=0;i<6;i++)
     {
-        scanf("%d",&array1[i]);
+        scanf("%d",&array2[i]);
     }
-    printf("\n");
-
-    terc (array1, array2, array3);
+    terc(array1, array2, array3);
 
     printf("arreglo 3\n");
     for(i=0;i<6;i++)
@@ -29,16 +29,12 @@ int main()
 void terc (int array1[],int array2[], int array3[])
 {
     int *ptr1, *ptr2;
-    int i,j;
-    j=5;
+    int i;
     for(i=0;i<3;i++)
     {
         ptr1=&array1[i];
         array3[i]=*ptr1;
-    }
-    for(i=3;i<6;i++)
-    {
-        ptr2=&array2[i-3];
-        array3[i]=*ptr2;
+        ptr2=&array2[i+3];
+        array3[i+3]=*ptr2;
     }
 }
