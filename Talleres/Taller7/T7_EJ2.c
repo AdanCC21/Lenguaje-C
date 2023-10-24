@@ -1,25 +1,15 @@
 /*  
-    Taller 7 Ejercicio 3
+    Taller 7 Ejercicio 2
     Gonzalez Cesena Adan 372799
     Grupo 932
     23/10/2023
 */
 
-//      Prototipos      //
-void imprim ();
-
 #include <stdio.h>
 #include <string.h>
 #define N 3
 
-//      Main        //
 int main()
-{
-    imprim();
-    return 0;
-}
-
-void imprim ()
 {
     char *ptr[N];
     char temp[50];
@@ -36,4 +26,6 @@ void imprim ()
     {
         printf(" %s \n",ptr[i]);
     }
+
+    return 0;
 }
