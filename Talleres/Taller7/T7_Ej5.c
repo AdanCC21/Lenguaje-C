@@ -4,56 +4,55 @@
 #define MAX_PALABRAS 100
 #define MAX_LONGITUD_PALABRA 50
 
-void ordenarPalabras(char *palabras[], int numPalabras);
+void ord(char *palabras[], int numPalabras);
 
 int main()
 {
-    char *palabras[MAX_PALABRAS];
-    int numPalabras;
+    char *ptr[MAX_PALABRAS];
+    int nump;
     int i;
 
-    printf("Ingrese el número de palabras: ");
-    scanf("%d", &numPalabras);
+    printf("Ingrese el numero de palabras: ");
+    scanf("%d", &nump);
 
-    if (numPalabras > MAX_PALABRAS)
+    if (nump > MAX_PALABRAS)
     {
-        printf("El número de palabras es demasiado grande. Se permiten hasta %d palabras.\n", MAX_PALABRAS);
+        printf("El numero de palabras es demasiado grande. Se permiten hasta %d palabras.\n", MAX_PALABRAS);
         return 1;
     }
 
     printf("Ingrese las palabras una por una:\n");
-    for (i = 0; i < numPalabras; i++)
+    for (i = 0; i < nump; i++)
     {
-        palabras[i] = (char *)malloc(MAX_LONGITUD_PALABRA * sizeof(char));
-        scanf("%s", palabras[i]);
+        ptr[i] = (char *)malloc(MAX_LONGITUD_PALABRA * sizeof(char));
+        scanf("%s", ptr[i]);
     }
 
-    ordenarPalabras(palabras, numPalabras);
+    ord(ptr, nump);
 
-    printf("Palabras ordenadas alfabéticamente:\n");
-    for (i = 0; i < numPalabras; i++)
+    printf("Palabras ordenadas alfabeticamente:\n");
+    for (i = 0; i < nump; i++)
     {
-        printf("%s\n", palabras[i]);
-        free(palabras[i]); // Liberar la memoria asignada
+        printf("%s\n", ptr[i]);
     }
 
     return 0;
 }
 
-void ordenarPalabras(char *palabras[], int numPalabras)
+void ord(char *ptr[], int nump)
 {
     int i, j;
     char temp[MAX_LONGITUD_PALABRA];
 
-    for (i = 0; i < numPalabras - 1; i++)
+    for (i = 0; i < nump - 1; i++)
     {
-        for (j = i + 1; j < numPalabras; j++)
+        for (j = i + 1; j < nump; j++)
         {
-            if (strcmp(palabras[i], palabras[j]) > 0)
+            if (strcmp(ptr[i], ptr[j]) > 0)
             {
-                strcpy(temp, palabras[i]);
-                strcpy(palabras[i], palabras[j]);
-                strcpy(palabras[j], temp);
+                strcpy(temp, ptr[i]);
+                strcpy(ptr[i], ptr[j]);
+                strcpy(ptr[j], temp);
             }
         }
     }
