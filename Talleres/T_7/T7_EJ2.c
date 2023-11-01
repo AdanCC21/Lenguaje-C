@@ -5,9 +5,9 @@
     23/10/2023
 */
 
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <string.h>
-.*"description".*\r?\ndefine N 3
+#include <stdio.h>
+#include <string.h>
+#define N 3
 
 int main()
 {

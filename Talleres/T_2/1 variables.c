@@ -1,5 +1,5 @@
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ndefine TASA_DESCUENTO 0.1
+#include <stdio.h>
+#define TASA_DESCUENTO 0.1
 int main()
 {
     int x, y, r; //Ej 1Definir 2 variables

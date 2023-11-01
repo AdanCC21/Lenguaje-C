@@ -4,7 +4,7 @@ Grupo 932
 Fecha 17/10/2023
 */
 
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 
 int multiplicar (int *ptr);
 

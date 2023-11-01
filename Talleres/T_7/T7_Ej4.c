@@ -5,8 +5,8 @@
     23/10/2023
 */
 
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <string.h>
+#include <stdio.h>
+#include <string.h>
 
 //      Prototipos      //
 void invertirCadena(char *cadena);

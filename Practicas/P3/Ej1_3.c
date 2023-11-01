@@ -2,9 +2,9 @@
 Gonzalez Ceseña Adan 372799
 13/09/2023
 En este archivo contiene todo el codigo de la practica 3 del juego de adivinanza*/
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <stdlib.h>
-.*"description".*\r?\ninclude <time.h>
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <time.h>
 
 int main()
 {

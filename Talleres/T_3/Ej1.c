@@ -3,7 +3,7 @@ Gonzalez Ceseña Adan 372799
 16-09-2023
 Este archivo contiene el contenido del ejercicio 1 del taller 4*/
 
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 
 void factorial(int n);
 

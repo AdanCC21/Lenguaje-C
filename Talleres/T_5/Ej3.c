@@ -1,4 +1,4 @@
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 //prototipo
 void contador ();
 

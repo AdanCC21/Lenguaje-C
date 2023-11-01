@@ -2,11 +2,11 @@
 Gonzalez Ceseña Adan 372799
 09/30/2023
 Practica 5*/
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <stdlib.h>
-.*"description".*\r?\ninclude <time.h>
-.*"description".*\r?\ndefine H 60
-.*"description".*\r?\ndefine PIST 10000
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define H 60
+#define PIST 10000
 
 //Prototipos
 int ecu (int car1);

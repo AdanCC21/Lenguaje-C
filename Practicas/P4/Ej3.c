@@ -3,7 +3,7 @@ Gonzalez Cesena Adan 372799
 21/09/2023
 Calcular  el triangulo de pascal con el numero de lineas que pida el usuario*/
 
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 
 int coeficiente ();
 

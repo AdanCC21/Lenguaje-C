@@ -1,4 +1,4 @@
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 
 void terc (int array1[],int array2[], int array3[]);
 

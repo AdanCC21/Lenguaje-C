@@ -1,5 +1,5 @@
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <string.h>
+#include <stdio.h>
+#include <string.h>
 
 //  Prototipos  //
 int suma (int array[]);

@@ -1,5 +1,5 @@
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ndefine pi 3.14159
+#include <stdio.h>
+#define pi 3.14159
 
 int main()
 {

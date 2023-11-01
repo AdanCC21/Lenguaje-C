@@ -2,7 +2,7 @@
 Gonzalez Ceseña Adan 372799
 */
 
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 //prototipos
 void registro ();
 void automatica ();

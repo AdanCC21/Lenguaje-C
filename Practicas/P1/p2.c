@@ -1,6 +1,6 @@
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <stdlib.h> //Bibliteca para generar numeros aleatorios con srand y rand
-.*"description".*\r?\ninclude <time.h> //bibliteca para generar la semilla en base a la hora de tu sistema, imte null
+#include <stdio.h>
+#include <stdlib.h> //Bibliteca para generar numeros aleatorios con srand y rand
+#include <time.h> //bibliteca para generar la semilla en base a la hora de tu sistema, imte null
 
 int main() 
 {

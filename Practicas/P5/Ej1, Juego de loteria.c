@@ -2,9 +2,9 @@
 Gonzalez Ceseña Adan 372799
 09/30/2023
 Practica 5*/
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <stdlib.h>
-.*"description".*\r?\ninclude <time.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 //Parametro deonde se almacenara el numero ganado
 static int c;

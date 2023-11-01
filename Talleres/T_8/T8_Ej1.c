@@ -1,9 +1,9 @@
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude <string.h>
-.*"description".*\r?\ninclude <stdlib.h>
-.*"description".*\r?\ninclude <time.h>
-.*"description".*\r?\ninclude <conio.h>
-.*"description".*\r?\ninclude "libad.h"
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <conio.h>
+#include "libad.h"
 
 int main()
 {

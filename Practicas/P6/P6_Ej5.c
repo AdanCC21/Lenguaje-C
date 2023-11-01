@@ -1,4 +1,4 @@
-.*"description".*\r?\ninclude <stdio.h>
+#include <stdio.h>
 
 int max (int array[],int n);
 

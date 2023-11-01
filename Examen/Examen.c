@@ -2,8 +2,8 @@
 examen 1
 04-10-2023*/
 
-.*"description".*\r?\ninclude <stdio.h>
-.*"description".*\r?\ninclude "valid.h"
+#include <stdio.h>
+#include "valid.h"
 
 //prototipos
 
