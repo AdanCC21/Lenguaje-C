@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int valid (char msj[],int ri, int rf)
 {
     int n;

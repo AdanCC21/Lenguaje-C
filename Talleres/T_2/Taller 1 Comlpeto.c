@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <math.h>
-#define TASA_DESCUENTO 0.1
+.*"description".*\r?\ninclude <stdio.h>
+.*"description".*\r?\ninclude <math.h>
+.*"description".*\r?\ndefine TASA_DESCUENTO 0.1
 
 int main()
 {

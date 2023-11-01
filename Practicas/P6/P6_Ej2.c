@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 
 void copy (int array[],int array2[]);
 

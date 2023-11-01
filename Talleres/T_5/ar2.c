@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 
 // Declaración externa de la variable "saldo" declarada en archivo1
 extern int variable;

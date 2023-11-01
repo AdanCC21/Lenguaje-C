@@ -3,7 +3,7 @@ Gonzalez Cesena Adan 372799
 05/09/2023
 Crear un programa que tome una calificación numérica y la convierta en una
 calificación en letra utilizando operadores ternarios.*/
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int main()
 {
     int calif, op;

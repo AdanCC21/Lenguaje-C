@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int main()
 {
     int opcion, i; //Definimos variables

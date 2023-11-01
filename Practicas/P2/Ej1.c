@@ -5,7 +5,7 @@ Crear un programa que permita a los usuarios ingresar un número entero, especif
 el número de bits que se deben considerar y luego analizar el número en términos de
 bits encendidos, posiciones y representación binaria.*/
 
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int main()
 {
     int num_deci;

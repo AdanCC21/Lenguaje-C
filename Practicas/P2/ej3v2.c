@@ -11,7 +11,7 @@ en el inventario.
 o Maneja situaciones en las que el inventario esté lleno o vacío.
 o El programa debe terminar cuando el usuario decida salir.*/
 
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int main()
 {
     int sali, i, op, incop,c;

@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<math.h>
+.*"description".*\r?\ninclude<stdio.h>
+.*"description".*\r?\ninclude<math.h>
 int main()
 {
     int exp, bas, res;

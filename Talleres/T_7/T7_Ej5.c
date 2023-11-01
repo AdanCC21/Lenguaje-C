@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <string.h>
+.*"description".*\r?\ninclude <stdio.h>
+.*"description".*\r?\ninclude <string.h>
 
-#define MAX_PALABRAS 100
-#define MAX_LONGITUD_PALABRA 50
+.*"description".*\r?\ndefine MAX_PALABRAS 100
+.*"description".*\r?\ndefine MAX_LONGITUD_PALABRA 50
 
 void ord(char *palabras[], int numPalabras);
 

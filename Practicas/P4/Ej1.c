@@ -3,8 +3,8 @@ Gonzalez Cesena Adan 372799
 21/09/2023
 calcular ek fibonacci con una funcion sin recursion*/
 
-#include <stdio.h>
-#include <stdlib.h>
+.*"description".*\r?\ninclude <stdio.h>
+.*"description".*\r?\ninclude <stdlib.h>
 int menu ();
 void fibo ();
 

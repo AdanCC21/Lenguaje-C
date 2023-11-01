@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int main()
 {
     int num1, mult, sum, numr;

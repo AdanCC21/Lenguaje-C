@@ -3,10 +3,10 @@
     Version 20/10/2023
 */
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-#include <time.h>
+.*"description".*\r?\ninclude <stdio.h>
+.*"description".*\r?\ninclude <string.h>
+.*"description".*\r?\ninclude <stdlib.h>
+.*"description".*\r?\ninclude <time.h>
 
 //      Prototipos      //
 int valid (char msg[],int ri, int rf);

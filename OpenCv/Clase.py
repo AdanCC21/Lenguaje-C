@@ -1,2 +1,2 @@
-#clase 1/11/2023
+.*"description".*\r?\nclase 1/11/2023
 

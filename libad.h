@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include <stdlib.h>
+.*"description".*\r?\ninclude <stdio.h>
+.*"description".*\r?\ninclude <stdlib.h>
 
 //Prototipos
 int valid (char msg[],int ri, int rf);

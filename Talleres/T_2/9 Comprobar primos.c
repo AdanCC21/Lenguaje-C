@@ -1,5 +1,5 @@
 //comprobar si es primo o no primo
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 int esPrimo(int num2)
                 {
                     if (num2 <= 1) {

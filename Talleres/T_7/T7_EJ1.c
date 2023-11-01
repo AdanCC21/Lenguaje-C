@@ -5,7 +5,7 @@
     23/10/2023
 */
 
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 
 
 int main()

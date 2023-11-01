@@ -1,4 +1,4 @@
-#include <stdio.h>
+.*"description".*\r?\ninclude <stdio.h>
 
 //prototipos
 int comp(int array1[],int array2[], int n);
