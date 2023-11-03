@@ -7,17 +7,19 @@
 
 //Datos enteros
 
-int main(int argc, char *argv[])
+int main(int argc, int arg2)
 {
+    int suma;
+
+    suma= argc + arg2;
 
     printf("Numero total de argumentos: %d\n", argc);
 
-    for (int i = 0; i < argc; i++)
-    {
-
-        printf("Argumento %d: %s\n", i, argv[i]);
-    }
+  
+        printf("%d",argc);
+        printf("%d",arg2);
+    
     printf("______________________________");
 
-    return 0;
+    return suma;
 }
