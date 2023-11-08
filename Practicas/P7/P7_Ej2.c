@@ -8,34 +8,27 @@
 #include <string.h>
 #include "libad.h"
 
-void My_Min (char cad[], int lon);
-
 int main()
 {
-    int n,i;
-    char cad[30];
-    n=strlen(cad);
+    int n=5,i,j;
+    char *palabras[] = {"manzana", "banana", "cereza", "uva", "naranja"};
+    char *temp;
 
-    printf("Ingrese su cadena\n");
-    gets(cad);
-    My_Min(cad,n);
-    for(i=0;i<n;i++)
+    for (i = 0; i < n - 1; i++)
     {
-        //strcmp;
-    }
-}
-
-void My_Min (char cad[], int lon)
-{
-    int i;
-    for(i=0;i<lon;i++)
-    {
-        if(cad[i] >='A')
+        for (j = i + 1; j < n; j++)
         {
-            if(cad[i] <= 'Z')
+            if (strcmp(palabras[i], palabras[j]) > 0)
             {
-                cad[i]+=32;
+                temp = palabras[i];
+                palabras[i] = palabras[j];
+                palabras[j] = temp;
             }
         }
+    }
+
+    for (i = 0; i < n; i++)
+    {
+        printf("%s\n", palabras[i]);
     }
 }

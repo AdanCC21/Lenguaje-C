@@ -1,7 +1,14 @@
-#include "libad.h"
-
-int main()
+void My_Min (char cad[], int lon)
 {
-    printf("Hola");
-    return 0;
+    int i;
+    for(i=0;i<lon;i++)
+    {
+        if(cad[i] >='A')
+        {
+            if(cad[i] <= 'Z')
+            {
+                cad[i]+=32;
+            }
+        }
+    }
 }
