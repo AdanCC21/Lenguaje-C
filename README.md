@@ -1,10 +1,10 @@
-##Materia  Lenguaje C
+## Materia  Lenguaje C
 
 # Univesidad Autonoma De Baja California - UABC
 
-#Facultad de ingenieria y arquitectura
+# Facultad de ingenieria y arquitectura
 
-#Ingenieria en software y tecnologias emergentes - ISyT
+# Ingenieria en software y tecnologias emergentes - ISyT
 
 Gonzalez Cesena Adan
 
