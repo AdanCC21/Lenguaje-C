@@ -139,7 +139,7 @@ int main ()
                         pos1--;
                         
                         printf("Posicion 2\nQue posicion desea restar\nDesde 1 a %d\n",p);
-                        pos2=valid("Posicion fuera de rango",1,p+;
+                        pos2=valid("Posicion fuera de rango",1,p;
                         pos2--;
 
                         res = reg[pos1].precio - reg[pos2].precio;
