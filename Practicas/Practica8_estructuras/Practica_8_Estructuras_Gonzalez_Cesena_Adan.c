@@ -1,3 +1,11 @@
+/*
+    Nombre del progra : Practica_8_Estructuras_Gonzalez_Cesena_Adan
+    Autor : Gonzale Cesena Adan
+    Fecha 22/11/2023
+    Descripcion Practica 8, creacion de un inventario con varias funciones
+*/
+
+
 #include <stdio.h>
 #include <string.h>
 
@@ -6,7 +14,7 @@
 
 #include "libad.h"
 
-#define P 500
+#define P 500 //Definimos un limite de registros manipulable
 
 //--------------------------Struct--------------------------//
 typedef struct producto
@@ -31,18 +39,6 @@ void precio (product prod[],int p);
 void cantidad (product prod[],int p);
 //---------------------------Main---------------------------//
 
-void menu ()
-{
-    printf("Bienvenido\nIngrese una opcion para continuar\n");
-    printf("1.-Agregar al inventario\n");
-    printf("2.-Eliminar inventario\n");
-    printf("3.-Mostrar inventario\n");
-    printf("4.-Sumatoria del inventario\n");
-    printf("5.-Operacion\n");
-    printf("6.-Ordenar\n");
-    printf("0.-Salir\n");
-}
-
 int main ()
 {
     product reg[P];
@@ -57,6 +53,7 @@ int main ()
         {
             case 1:
             {
+                // Dependiendo si el inventario no esta lleno entrara o no
                 if(p < P)
                 {
                     agregar(reg,p);
@@ -71,6 +68,7 @@ int main ()
             }
             case 2:
             {
+                // Dependiendo si hay datos en el inventario entrara o no
                 if(p > 0)
                 {
                     retirar(reg,p);
@@ -85,6 +83,7 @@ int main ()
             }
             case 3:
             {
+                // Dependiendo si hay datos en el inventario entrara o no
                 if(p > 0)
                 {
                     mostrar(reg,p);
@@ -98,6 +97,7 @@ int main ()
             }
             case 4:
             {
+                // Dependiendo si hay datos en el inventario entrara o no
                 if(p > 0)
                 {
                     total(reg,p);
@@ -111,100 +111,117 @@ int main ()
             }
             case 5:
             {
-                int oper, pos1, pos2,res;
-                printf("Que operacion desea realizar\n1.-Suma 2.-Resta 3.-Multuplicacion 4.-Division\n");
-                oper=valid("Fuera de rango\n",1,4);
-
-                if(oper==1)
+                // Dependiendo si hay datos suficientes en el inventario entrara o no
+                if(p>1)
                 {
-                    printf("Posicion 1\nQue posicion desea sumar\nDesde 1 a %d\n",p);
-                    pos1=valid("Posicion fuera de rango",1,p);
-                    pos1--;
-                    
-                    printf("Posicion 2\nQue posicion desea sumar\nDesde 1 a %d\n",p);
-                    pos2=valid("Posicion fuera de rango",1,p);
-                    pos2--;
-                    
-                    res = reg[pos1].precio + reg[pos2].precio;
+                    int oper, pos1, pos2,res;
+                    printf("Que operacion desea realizar\n1.-Suma 2.-Resta 3.-Multuplicacion 4.-Division\n");
+                    oper=valid("Fuera de rango\n",1,4);
 
-                    printf("Tu resultado es %d\n",res);
-                    getch();
-                }
-                else
-                {
-                    if(oper==2)
+                    if(oper==1)
                     {
-                        printf("Posicion 1\nQue posicion desea restar\nDesde 1 a %d\n",p);
+                        printf("Posicion 1\nQue posicion desea sumar\nDesde 1 a %d\n",p);
                         pos1=valid("Posicion fuera de rango",1,p);
                         pos1--;
                         
-                        printf("Posicion 2\nQue posicion desea restar\nDesde 1 a %d\n",p);
-                        pos2=valid("Posicion fuera de rango",1,p;
+                        printf("Posicion 2\nQue posicion desea sumar\nDesde 1 a %d\n",p);
+                        pos2=valid("Posicion fuera de rango",1,p);
                         pos2--;
+                        
+                        res = reg[pos1].precio + reg[pos2].precio;
 
-                        res = reg[pos1].precio - reg[pos2].precio;
                         printf("Tu resultado es %d\n",res);
                         getch();
                     }
                     else
                     {
-                        if(oper==3)
+                        if(oper==2)
                         {
-                            printf("Posicion 1\nQue posicion desea multiplicar\nDesde 1 a %d\n",p);
+                            printf("Posicion 1\nQue posicion desea restar\nDesde 1 a %d\n",p);
                             pos1=valid("Posicion fuera de rango",1,p);
                             pos1--;
                             
-                            printf("Posicion 2\nQue posicion desea multiplicar\nDesde 1 a %d\n",p);
+                            printf("Posicion 2\nQue posicion desea restar\nDesde 1 a %d\n",p);
                             pos2=valid("Posicion fuera de rango",1,p);
                             pos2--;
 
-                            res = reg[pos1].precio * reg[pos2].precio;
+                            res = reg[pos1].precio - reg[pos2].precio;
                             printf("Tu resultado es %d\n",res);
                             getch();
                         }
                         else
                         {
-                            if(oper==4)
+                            if(oper==3)
                             {
-                                printf("Posicion 1\nQue posicion desea dividir\nDesde 1 a %d\n",p);
+                                printf("Posicion 1\nQue posicion desea multiplicar\nDesde 1 a %d\n",p);
                                 pos1=valid("Posicion fuera de rango",1,p);
                                 pos1--;
                                 
-                                printf("Posicion 2\nQue posicion desea dividir\nDesde 1 a %d\n",p);
+                                printf("Posicion 2\nQue posicion desea multiplicar\nDesde 1 a %d\n",p);
                                 pos2=valid("Posicion fuera de rango",1,p);
                                 pos2--;
 
-                                res = reg[pos1].precio / reg[pos2].precio;
+                                res = reg[pos1].precio * reg[pos2].precio;
                                 printf("Tu resultado es %d\n",res);
                                 getch();
                             }
+                            else
+                            {
+                                if(oper==4)
+                                {
+                                    printf("Posicion 1\nQue posicion desea dividir\nDesde 1 a %d\n",p);
+                                    pos1=valid("Posicion fuera de rango",1,p);
+                                    pos1--;
+                                    
+                                    printf("Posicion 2\nQue posicion desea dividir\nDesde 1 a %d\n",p);
+                                    pos2=valid("Posicion fuera de rango",1,p);
+                                    pos2--;
+
+                                    res = reg[pos1].precio / reg[pos2].precio;
+                                    printf("Tu resultado es %d\n",res);
+                                    getch();
+                                }
+                            }
                         }
                     }
+                }
+                else
+                {
+                    printf("datos insuficientes\n");
+                    getch();
                 }
                 break;
             }
             case 6:
             {
-                int ord;
-                printf("Por que metodo desea ordenar\n1.-Alfabeticamente 2.-Precio 3.-Cantidad\n");
-                ord=valid("Fuera de rango",1,3);
-                if(ord==1)
+                if(p>1)
                 {
-                    letra(reg,p);
-                }
-                else
-                {
-                    if(ord==2)
+                    int ord;
+                    printf("Por que metodo desea ordenar\n1.-Alfabeticamente 2.-Precio 3.-Cantidad\n");
+                    ord=valid("Fuera de rango",1,3);
+                    if(ord==1)
                     {
-                        precio(reg,p);
+                        letra(reg,p);
                     }
                     else
                     {
-                        if(ord==3)
+                        if(ord==2)
                         {
-                            cantidad(reg,p);
+                            precio(reg,p);
+                        }
+                        else
+                        {
+                            if(ord==3)
+                            {
+                                cantidad(reg,p);
+                            }
                         }
                     }
+                }
+                else
+                {
+                    printf("Inventario vacio o con solo 1 producto\n");
+                    getch();
                 }
                 break;
             }
@@ -220,6 +237,33 @@ int main ()
     return 0;
 }
 
+//------------------------Funciones------------------------//
+/*
+    Funcion menu
+    imprime las opciones que tendra el usuario para moverse por todo el codigo
+    No recibe parametros
+    No retorna nada
+*/
+void menu ()
+{
+    printf("Bienvenido\nIngrese una opcion para continuar\n");
+    printf("1.-Agregar al inventario\n");
+    printf("2.-Eliminar inventario\n");
+    printf("3.-Mostrar inventario\n");
+    printf("4.-Sumatoria del inventario\n");
+    printf("5.-Operacion\n");
+    printf("6.-Ordenar\n");
+    printf("0.-Salir\n");
+}
+
+/*
+    Funcion : Agregar
+    Agrega los datos basicos que ingrese el usuario a la estrucutra, cada una con sus respectivas validaciones
+    parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void agregar (product prod[], int p)
 {
     int v;
@@ -252,12 +296,20 @@ void agregar (product prod[], int p)
     getch();
 }
 
+/*
+    Funcion retirar
+    elimina una posicion del inventario haciendo que se remplaze por la de la siguiente posicion y asi hasta llegar al limite eliminando una posicion usada
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void retirar (product prod[],int p)
 {
     int pos;
     printf("Que posicion desea eliminar\n");
-    printf("Desde 1 a %d\n",p+1);
-    pos = valid("Fuera de rango",1,p+1);
+    printf("Desde 1 a %d\n",p);
+    pos = valid("Fuera de rango",1,p);
     pos--;
 
     for(pos;pos < p -1 ;pos++)
@@ -269,6 +321,14 @@ void retirar (product prod[],int p)
     getch();
 }
 
+/*
+    Funcion Mostrar
+    Imprime todos los registros que el usuario haya ingresado
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void mostrar (product prod[],int p)
 {
     int i;
@@ -279,6 +339,14 @@ void mostrar (product prod[],int p)
     getch();
 }
 
+/*
+    Funcion total
+    Hara una suma de todos los precios del inventario y lo imprimira
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void total (product prod[],int p)
 {
     int total = 0;
@@ -290,6 +358,14 @@ void total (product prod[],int p)
     getch();
 }
 
+/*
+    Funcion letra
+    Ordenara el inventario de forma alfabeticamente
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void letra (product prod[], int p)
 {
     int i,j;
@@ -310,6 +386,14 @@ void letra (product prod[], int p)
     getch();
 }
 
+/*
+    Funcion letra
+    Ordenara el inventario de conforme el precio, de mayor a menor
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void precio (product prod[], int p)
 {
     int i,j;
@@ -330,6 +414,14 @@ void precio (product prod[], int p)
     getch();
 }
 
+/*
+    Funcion letra
+    Ordenara el inventario de conforme la cantidad, de mayor a menor
+    Parametros :
+        -prod[] = El registro/Estructura
+        -p = La posicion en la que se encuentra el programa y en donde almacenara los datos
+    No retorna nada
+*/
 void cantidad (product prod[], int p)
 {
     int i,j;
