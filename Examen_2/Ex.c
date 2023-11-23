@@ -65,7 +65,8 @@ void menu()
 void agregar (datos reg[], int p)
 {
     int i;
-    char temp[30];
+    //Tuve que agregar otro temp para agregar la raza
+    char temp[30],temp2[30];
     
     printf("ingrese el nombre\n");
     gets(temp);
@@ -75,8 +76,8 @@ void agregar (datos reg[], int p)
     scanf("%d",&reg[p].edad);
 
     printf("ingrese la raza\n");
-    gets(temp);
-    strcpy(reg[p].raza,temp);
+    gets(temp2);
+    strcpy(reg[p].raza,temp2);
 
     printf("Ingrese el estado\n1.-Saludable 2.-Estable 3.-Mal 4.-Grave\n");
     i=valid("fuera de rango",1,4);
@@ -135,6 +136,7 @@ void crear_txt (datos reg[],int p)
     getch();
     fclose(doc);
 } 
+
 
 //Funciones de librerira
 int busqsec (datos vect [],int n,int num)
