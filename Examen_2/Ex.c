@@ -34,7 +34,7 @@ int main()
     {
         system("CLS");
         menu();
-        op=valid("fuera de rango",0,5);
+        op=valid("fuera de rango",0,4);
         switch(op)
         {
             case 1:
