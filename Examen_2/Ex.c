@@ -18,6 +18,12 @@ typedef struct inventario
 //-------------------------------Prototipos----------------------------------
 void menu();
 void agregar (datos reg[], int p);
+void mostrar (datos reg[],int p);
+void editar (datos reg[], int p);
+void crear_txt (datos reg[],int p);
+
+int busqsec (datos vect [],int n,int num);
+int valid (char msg[],int ri, int rf);
 
 //-------------------------------Main----------------------------------
 int main()
@@ -36,8 +42,13 @@ int main()
                 p++;
                 break;
             case 2:
-
+                editar(reg,p);
                 break;
+            case 3:
+                mostrar(reg,p);
+                break;
+            case 4:
+                crear_txt(reg,p);
             case 0:
             {
                 printf("Seguro que quiere salir?\n1.-Salir 2.-Repetir\n");
@@ -135,7 +146,9 @@ void crear_txt (datos reg[],int p)
     printf("listo\n");
     getch();
     fclose(doc);
-} 
+}
+
+
 
 
 //Funciones de librerira
